@@ -5,9 +5,9 @@ import { Card, Name, Status, Species, Location, Origin, Image } from "./StyledWi
 export default function CharacterCard ({info}) {
   return (
     // <span>todo: location</span>
-    <div className="character-card">
-      <Card>
+      <div className="character-card">
 
+      <Card>
         <Image>
           {info.image}
         </Image>
@@ -31,8 +31,9 @@ export default function CharacterCard ({info}) {
         <Origin>
           Origin: {info.origin.name}
         </Origin>
-
+        
       </Card>
+
 
     </div>
   )

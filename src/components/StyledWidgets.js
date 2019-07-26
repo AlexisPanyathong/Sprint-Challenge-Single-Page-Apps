@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 //CharacterCard
+
 export const Card = styled.div`
     border: 2px solid black;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,26 +20,33 @@ export const Image = styled.div`
 
 export const Name = styled.h1`
     font-size: 25px;
+    margin-left: 20px;
+
 `;
 
 export const Status = styled.h2`
     font-size: 18px;
     color: lightgrey;
+    margin-left: 20px;
+    margin-right: 20px;
 `;
 
 export const Species = styled.p`
     font-size: 18px;
-    
+    margin-left: 20px;
+    margin-right: 20px; 
 `;
 
 export const Location = styled.p`
     font-size: 18px;
-    
+    margin-left: 20px;
+    margin-right: 20px;
 `;
 
 export const Origin = styled.p`
     font-size: 18px;
-    
+    margin-left: 20px;
+    margin-right: 20px;
 `;
 
 //LocationCard
