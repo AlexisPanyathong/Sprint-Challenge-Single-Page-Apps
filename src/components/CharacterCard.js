@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Card, Name, Status, Species, Location, Origin, Image } from "./StyledWidgets";
 
 
@@ -9,7 +9,7 @@ export default function CharacterCard ({info}) {
 
       <Card>
         <Image>
-          {info.image}
+          <img src={info.image} alt="characters"/>
         </Image>
 
         <Name>
@@ -31,8 +31,11 @@ export default function CharacterCard ({info}) {
         <Origin>
           Origin: {info.origin.name}
         </Origin>
+
+
         
       </Card>
+        {/* const characterLabel = createLabel("users", "Characters") */}
 
 
     </div>

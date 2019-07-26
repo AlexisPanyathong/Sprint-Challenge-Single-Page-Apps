@@ -3,7 +3,7 @@ import axios from "axios";
 import EpisodeCard from "./EpisodeCard";
 
 export default function EpisodeList() {
-    const [epsiodes, setEpisodes] = useState([]);
+    const [episodes, setEpisodes] = useState([]);
 
     useEffect(() => {
         axios.get(`https://rickandmortyapi.com/api/episode/`)
@@ -11,7 +11,7 @@ export default function EpisodeList() {
         .then(response => {
             console.log('rickandmorty episode api', response.data);
 
-            setEpisodes(response.data.reesults);
+            setEpisodes(response.data.results);
 
         });
 
@@ -20,10 +20,10 @@ export default function EpisodeList() {
 
     return (
         <div className="episode-list">
-            <h2>Episodes</h2>
-            {/* {episodes.map(episode => (
-
-            ))} */}
+            
+            {episodes.map(episode => (
+                <EpisodeCard key={episode.id} info={episode}/>
+            ))}
         </div>
     )
 }

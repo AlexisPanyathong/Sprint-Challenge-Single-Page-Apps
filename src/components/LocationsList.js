@@ -19,7 +19,7 @@ export default function LocationsList() {
 
     return (
         <div className="location-list">
-            <h2>Location</h2>
+            
             {locations.map(location => (
                 <LocationCard key={location.name} info={location}/>
             ))}

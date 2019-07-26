@@ -34,7 +34,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 > Answer: Controlled components is when the form will work through the React state instead of having its own state.
 
 - [ ] Name three tools/libraries for making AJAX requests.
-> Answer: GET, API, jQuery
+> Answer: GET, AXIOS
 
 
 ## Project Set Up

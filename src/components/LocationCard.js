@@ -1,5 +1,5 @@
-import React from 'react'
-import { CardTwo, Planet, Type } from "./StyledWidgets";
+import React from 'react';
+import { CardTwo, Planet, Type, Residents } from "./StyledWidgets";
 
 export default function LocationCard ({info}) {
   // image={image}
@@ -11,16 +11,14 @@ export default function LocationCard ({info}) {
         <Planet>
           {info.name}
         </Planet>
-
         <Type>
           {info.type} - {info.dimension}
         </Type>
 
-
-        {/* <Residents>
-          {info.residents[0]}
+        {/* /* Couldn't figure out on how to show the number of residents */
+        /* <Residents>
+          {info.residents}
         </Residents> */}
-
       </CardTwo>
     </div>
 
