@@ -3,10 +3,13 @@ import styled from "styled-components";
 //CharacterCard
 export const Card = styled.div`
     border: 2px solid black;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0 auto;
+    margin-bottom: 60px;
 `;
 
 export const Image = styled.div`
@@ -40,6 +43,17 @@ export const Origin = styled.p`
 
 //LocationCard
 
+export const CardTwo = styled.div`
+    border: 2px solid black;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 60px;
+`;
+
 export const Planet = styled.h3`
     font-size: 30px;
 `;
@@ -49,10 +63,6 @@ export const Type = styled.p`
     color: lightgrey;
 `;
 
-export const Dimension = styled.p`
-    font-size: 20px;
-    color: lightgrey;
-`;
 
 // export const Residents = styled.p`
 //     font-size: 20px;

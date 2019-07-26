@@ -9,7 +9,7 @@ export default function CharacterCard ({info}) {
       <Card>
 
         <Image>
-          {info.url}
+          {info.image}
         </Image>
 
         <Name>

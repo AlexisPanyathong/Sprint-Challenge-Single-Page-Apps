@@ -1,32 +1,27 @@
 import React from 'react'
-import { Card, Planet, Type, Dimension } from "./StyledWidgets";
+import { CardTwo, Planet, Type } from "./StyledWidgets";
 
 export default function LocationCard ({info}) {
   // image={image}
 
-  // name, type, dimension, residents
-
   return (
     // <span>todo: location</span>
     <div className="location-card">
-      <Card>
+      <CardTwo>
         <Planet>
           {info.name}
         </Planet>
 
         <Type>
-          {info.type}
+          {info.type} - {info.dimension}
         </Type>
 
-        <Dimension>
-          {info.dimension}
-        </Dimension>
 
         {/* <Residents>
           {info.residents[0]}
         </Residents> */}
 
-      </Card>
+      </CardTwo>
     </div>
 
 
