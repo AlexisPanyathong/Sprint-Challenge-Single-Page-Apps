@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import { serialize } from 'uri-js';
+import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -14,13 +14,18 @@ export default function CharacterList() {
     .then(response => {
       console.log(`rickandmorty api`, response.data);
 
-      console.log(setCharacters);
+      setCharacters(response.data.results);
     });
   }, []);
   console.log(characters);
-  return <section className='character-list grid-view'>
+
+  return (
+    <section className='character-list grid-view'>
 
       <h2>TODO: `array.map()` over your state here!</h2>
+      {characters.map(character => (
+        <CharacterCard key={character.name} info={character}/>
+      ))}
     </section>
-
+  );
 }

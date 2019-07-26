@@ -1,14 +1,14 @@
 import React from 'react'
-// import { Card, Name } from 
+import { Card, Name } from "./StyledWidgets";
 
 
-export default function CharacterCard ({character}) {
+export default function CharacterCard ({info}) {
   return (
     // <span>todo: location</span>
     <div className="character-card">
       <Card>
         <Name>
-          {character.name}
+          {info.name}
         </Name>
       </Card>
 
